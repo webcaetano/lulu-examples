@@ -2,14 +2,14 @@ var Phaser = require('phaser');
 var main = require('./main');
 
 var setup = {
-	width:300,
-	height:300,
+	width:600,
+	height:600,
 	where:'master-canvas'
 }
 
-// @if !dist
-require('./modules/stats')();
-// @endif
+if(__DEV__){
+	require('./modules/stats')();
+}
 
 
 var game = main.game = new Phaser.Game(setup.width, setup.height, Phaser.CANVAS, setup.where, setup.where);

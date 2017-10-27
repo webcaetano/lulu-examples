@@ -2,9 +2,8 @@ var params = require('./modules/urlParams');
 
 module.exports = function(){
 	var {scope,game} = require('./main');
-	// var lulu = require('lulu')(game);
+	var lulu = require('lulu');
 
 
-	// console.log('yyyy',lulu)
-	console.log('x',scope,game)
+	console.log('yyyy',lulu)
 }

@@ -32,7 +32,10 @@ module.exports = function(options) {
 					this.plugin("done", function(stats){
 						if (stats.compilation.errors && stats.compilation.errors.length)gutil.beep();
 					});
-				}
+				},
+				new $.webpack.webpack.DefinePlugin({
+					__DEV__:watch,
+				}),
 			],
 			externals,
 			output: { filename: 'index.js' }
