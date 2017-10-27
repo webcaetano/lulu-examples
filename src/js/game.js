@@ -1,7 +1,10 @@
 var params = require('./modules/urlParams');
 var _ = require('lodash');
 var Phaser = require('phaser');
+var main = require('./main');
 var utils = require('utils');
+var {game} = main;
+var scope = null;
 
 var assets = {
 	images:{
@@ -16,12 +19,12 @@ var assets = {
 		}
 	}
 }
-var scope = {};
 
-module.exports = function(game,rootScope){
+module.exports = function(){
 	var state = {};
 
 	state.init = function(){
+		scope = main.scope = {};
 	}
 
 	state.preload = function(){
@@ -50,7 +53,7 @@ module.exports = function(game,rootScope){
 			// break;
 			default :
 			case 'test':
-				require('./test')(game,scope,rootScope);
+				require('./test')();
 			break;
 		}
 	}

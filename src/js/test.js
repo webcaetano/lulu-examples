@@ -1,8 +1,10 @@
 var params = require('./modules/urlParams');
 
-module.exports = function(game,scope,rootScope){
-	var dtools = require('phaser-dev-tools')(game);
+module.exports = function(){
+	var {scope,game} = require('./main');
+	// var dtools = require('phaser-dev-tools')(game);
 
 
-	console.log('yyyy',dtools)
+	// console.log('yyyy',dtools)
+	console.log('x',scope,game)
 }

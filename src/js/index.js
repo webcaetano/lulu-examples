@@ -1,12 +1,10 @@
 var Phaser = require('phaser');
+var main = require('./main');
 
-var rootScope = {
-	options:{
-		width:300,
-		height:300,
-		where:'master-canvas'
-	},
-	debug:false // make sure set it to false when release
+var setup = {
+	width:300,
+	height:300,
+	where:'master-canvas'
 }
 
 // @if !dist
@@ -14,9 +12,8 @@ require('./modules/stats')();
 // @endif
 
 
-var game = new Phaser.Game(rootScope.options.width, rootScope.options.height, Phaser.CANVAS, rootScope.options.where, rootScope.options.where);
+var game = main.game = new Phaser.Game(setup.width, setup.height, Phaser.CANVAS, setup.where, setup.where);
 
-game.state.add('game', require('./game')(game,rootScope));
+game.state.add('game', require('./game'));
 
-// game.state.start('blank');
 game.state.start('game');
