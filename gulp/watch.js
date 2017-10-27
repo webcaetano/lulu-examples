@@ -17,7 +17,7 @@ module.exports = function(options) {
 		], gulp.series('fullReload'));
 
 		gulp.watch([
-			'./../phaser-dev-tools/build/*.js',
+			'./../lulu/build/*.js',
 		], function watch(done){
 			browserSync.reload();
 			done();

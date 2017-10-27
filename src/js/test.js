@@ -2,9 +2,9 @@ var params = require('./modules/urlParams');
 
 module.exports = function(){
 	var {scope,game} = require('./main');
-	// var dtools = require('phaser-dev-tools')(game);
+	// var lulu = require('lulu')(game);
 
 
-	// console.log('yyyy',dtools)
+	// console.log('yyyy',lulu)
 	console.log('x',scope,game)
 }

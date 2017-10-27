@@ -13,7 +13,7 @@ module.exports = function(options) {
 			"phaser": "Phaser",
 			"utils": "$utils",
 			"phaser-craft": "craft",
-			"phaser-dev-tools": "phaser-dev-tools",
+			"lulu": "lulu",
 			"stats": "Stats"
 		}
 
