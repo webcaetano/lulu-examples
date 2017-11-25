@@ -1,6 +1,78 @@
 {"frames": [
 
 {
+	"filename": "9patch/001.png",
+	"frame": {"x":1,"y":388,"w":37,"h":35},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":37,"h":35},
+	"sourceSize": {"w":37,"h":35}
+},
+{
+	"filename": "9patch/002.png",
+	"frame": {"x":230,"y":284,"w":4,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":4,"h":32},
+	"sourceSize": {"w":4,"h":32}
+},
+{
+	"filename": "9patch/003.png",
+	"frame": {"x":40,"y":388,"w":37,"h":35},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":37,"h":35},
+	"sourceSize": {"w":37,"h":35}
+},
+{
+	"filename": "9patch/004.png",
+	"frame": {"x":79,"y":410,"w":30,"h":4},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":4},
+	"sourceSize": {"w":30,"h":4}
+},
+{
+	"filename": "9patch/005.png",
+	"frame": {"x":157,"y":200,"w":4,"h":4},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":4,"h":4},
+	"sourceSize": {"w":4,"h":4}
+},
+{
+	"filename": "9patch/006.png",
+	"frame": {"x":79,"y":404,"w":31,"h":4},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":4},
+	"sourceSize": {"w":31,"h":4}
+},
+{
+	"filename": "9patch/007.png",
+	"frame": {"x":79,"y":365,"w":33,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":37},
+	"sourceSize": {"w":33,"h":37}
+},
+{
+	"filename": "9patch/008.png",
+	"frame": {"x":157,"y":163,"w":4,"h":35},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":4,"h":35},
+	"sourceSize": {"w":4,"h":35}
+},
+{
+	"filename": "9patch/009.png",
+	"frame": {"x":114,"y":365,"w":33,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":37},
+	"sourceSize": {"w":33,"h":37}
+},
+{
 	"filename": "pattern.png",
 	"frame": {"x":1,"y":1,"w":160,"h":160},
 	"rotated": false,
@@ -10,7 +82,7 @@
 },
 {
 	"filename": "wizz/wizz0032.png",
-	"frame": {"x":163,"y":68,"w":80,"h":65},
+	"frame": {"x":74,"y":230,"w":80,"h":65},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":36,"y":27,"w":80,"h":65},
@@ -18,7 +90,7 @@
 },
 {
 	"filename": "wizz/wizz0033.png",
-	"frame": {"x":163,"y":1,"w":81,"h":65},
+	"frame": {"x":74,"y":163,"w":81,"h":65},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":35,"y":27,"w":81,"h":65},
@@ -26,7 +98,7 @@
 },
 {
 	"filename": "wizz/wizz0034.png",
-	"frame": {"x":163,"y":135,"w":78,"h":64},
+	"frame": {"x":157,"y":218,"w":78,"h":64},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":36,"y":27,"w":78,"h":64},
@@ -34,7 +106,7 @@
 },
 {
 	"filename": "wizz/wizz0035.png",
-	"frame": {"x":148,"y":201,"w":77,"h":66},
+	"frame": {"x":74,"y":297,"w":77,"h":66},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":37,"y":27,"w":77,"h":66},
@@ -42,7 +114,7 @@
 },
 {
 	"filename": "wizz/wizz0036.png",
-	"frame": {"x":74,"y":237,"w":72,"h":70},
+	"frame": {"x":163,"y":75,"w":72,"h":70},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":38,"y":24,"w":72,"h":70},
@@ -50,7 +122,7 @@
 },
 {
 	"filename": "wizz/wizz0037.png",
-	"frame": {"x":74,"y":163,"w":72,"h":72},
+	"frame": {"x":163,"y":1,"w":72,"h":72},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":38,"y":22,"w":72,"h":72},
@@ -58,7 +130,7 @@
 },
 {
 	"filename": "wizz/wizz0038.png",
-	"frame": {"x":148,"y":269,"w":72,"h":69},
+	"frame": {"x":163,"y":147,"w":72,"h":69},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":38,"y":25,"w":72,"h":69},
@@ -90,7 +162,7 @@
 },
 {
 	"filename": "wizz/wizz0042.png",
-	"frame": {"x":148,"y":340,"w":72,"h":69},
+	"frame": {"x":156,"y":284,"w":72,"h":69},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":38,"y":24,"w":72,"h":69},
@@ -98,7 +170,7 @@
 },
 {
 	"filename": "wizz/wizz0043.png",
-	"frame": {"x":74,"y":309,"w":72,"h":70},
+	"frame": {"x":153,"y":355,"w":72,"h":70},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":38,"y":24,"w":72,"h":70},
@@ -109,8 +181,8 @@
 	"version": "1.0",
 	"image": "atlas.png",
 	"format": "RGBA8888",
-	"size": {"w":245,"h":410},
+	"size": {"w":236,"h":426},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:5a5e4e604aa0a2afb57bb1f314b32867:de34f942e80b248205f4f15ab8ae2477:cbce6b53f0f49e0bf15173c25c41f876$"
+	"smartupdate": "$TexturePacker:SmartUpdate:e590ea6b98b4f66830af92b3cf0b08af:d36a6c333ab15d37725d1ab0c79e50c5:cbce6b53f0f49e0bf15173c25c41f876$"
 }
 }
