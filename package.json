@@ -2,6 +2,7 @@
   "name": "lulu-examples",
   "version": "1.0.0",
   "dependencies": {
+    "dat.gui": "git://github.com/webcaetano/dat.gui.git#3377e25f113e119d061e5fa738e142f93cd414b1"
   },
   "scripts": {
     "build": "gulp build",
@@ -20,8 +21,5 @@
     "phaser-utils": "git@github.com:webcaetano/phaser-utils.git",
     "stats.js": "git@github.com:mrdoob/stats.js.git#c93fcbfe64062b05bce137fdf3465a195af25e14",
     "dat.gui": "git://github.com/webcaetano/dat.gui.git#3377e25f113e119d061e5fa738e142f93cd414b1"
-  },
-  "externals": {
-    "phaser": "Phaser"
   }
 }
