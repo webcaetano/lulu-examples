@@ -5,15 +5,15 @@ module.exports = function(){
 	var lulu = require('lulu')(game);
 
 
-	var group = game.add.group();
-	group.x = 300;
-	group.y = 300;
+	// var group = game.add.group();
+	// group.x = 50;
+	// group.y = 50;
 
 	var sprite = game.add.sprite(0,0,'main','wizz/wizz0032.png');
 
 	sprite.angle = 0;
-	sprite.x = 300;
-	sprite.y = 300;
-	group.add(sprite);
+	sprite.x = 200;
+	sprite.y = 200;
+	// group.add(sprite);
 	lulu.ajustSprite(sprite);
 }
