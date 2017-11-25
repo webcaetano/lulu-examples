@@ -36,9 +36,9 @@ module.exports = function(){
 
 	state.create = function(){
 		switch(params.example){
-			// case '1':
-			// 	require('./example1')(game,scope,rootScope);
-			// break;
+			case 'sprite':
+				require('./examples/sprite.js')();
+			break;
 			// case '2':
 			// 	require('./example2')(game,scope,rootScope);
 			// break;
