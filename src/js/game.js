@@ -36,6 +36,7 @@ module.exports = function(){
 
 	state.create = function(){
 		require('./layers')();
+		require('./menu')();
 		switch(params.example){
 			case 'sprite':
 				require('./examples/sprite.js')();
