@@ -37,26 +37,18 @@ module.exports = function(){
 	state.create = function(){
 		require('./layers')();
 		require('./menu')();
+
 		switch(params.example){
-			case 'sprite':
-				require('./examples/sprite.js')();
-			break;
-			// case '2':
-			// 	require('./example2')(game,scope,rootScope);
-			// break;
-			// case '3':
-			// 	require('./example3')(game,scope,rootScope);
-			// break;
-			// case '4':
-			// 	require('./example4')(game,scope,rootScope);
-			// break;
-			// case '5':
-			// 	require('./example5')(game,scope,rootScope);
-			// break;
 			default :
-			case 'test':
-				require('./test')();
+			case 'sprite':
+				require('./examples/sprite')();
 			break;
+			case 'rectangle':
+				require('./examples/rectangle')();
+			break;
+			// case 'test':
+			// 	require('./test')();
+			// break;
 		}
 	}
 
