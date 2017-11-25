@@ -41,13 +41,19 @@ module.exports = function(){
 		label.x = (bkg.width/2)-(label.width/2);
 		label.y = (bkg.height/2)-(label.height/2)+2;
 
-		bkg.inputEnabled = true;
-		bkg.events.onInputDown.add(function(){
-			window.location.href = "/?example="+val.name;
-		})
-
 		button.add(bkg);
 		button.add(label);
 		group.add(button);
+
+		if(params.example==val.name){
+			bkg.clear();
+			bkg.beginFill('0x7EC0F6');
+			bkg.drawRoundedRect(0,0,110,30,5);
+		} else {
+			bkg.inputEnabled = true;
+			bkg.events.onInputDown.add(function(){
+				window.location.href = "/?example="+val.name;
+			})
+		}
 	})
 }
