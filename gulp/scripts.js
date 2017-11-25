@@ -38,6 +38,12 @@ module.exports = function(options) {
 				}),
 			],
 			externals,
+			resolve:{
+				alias:{
+					main:require.resolve('./../src/js/main.js'),
+					urlParams:require.resolve('./../src/js/modules/urlParams.js'),
+				}
+			},
 			output: { filename: 'index.js' }
 		};
 

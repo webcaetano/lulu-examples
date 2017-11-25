@@ -1,5 +1,5 @@
 var Phaser = require('phaser');
-var main = require('./main');
+var main = require('main');
 
 var setup = {
 	width:600,
