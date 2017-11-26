@@ -37,6 +37,8 @@ module.exports = function(){
 			height:20,
 		}
 
+		if(patchSquare.data.width<40 || patchSquare.data.height<40) return;
+
 		_.each([
 			{
 				sprite:'9patch/001.png',
