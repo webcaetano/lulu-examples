@@ -21,6 +21,9 @@ module.exports = function(){
 		{
 			name:'rectangle',
 		},
+		{
+			name:'circle',
+		},
 	],function(val,i){
 		var button = game.add.group();
 
