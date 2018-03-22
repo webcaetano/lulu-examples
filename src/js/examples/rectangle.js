@@ -14,14 +14,16 @@ module.exports = function(){
 
 	// example of 9 patch
 	var patchSquare = lulu.square();
-	patchSquare.x = 300;
+	patchSquare.x = 200;
 	patchSquare.y = 200;
 
 	var group = game.add.group();
-	var topGroup = game.add.group();
+	// var topGroup = game.add.group();
 	var ninePatchGroup = null;
 
-	topGroup.add(patchSquare);
+	group.x = 100;
+	group.y = 100;
+	group.add(patchSquare);
 
 	var createNinePatch = function(){
 		if(ninePatchGroup) ninePatchGroup.pendingDestroy = true;
@@ -114,8 +116,8 @@ module.exports = function(){
 			},
 		],function(val,i){
 			var sprite = game.add.sprite(0,0,'main',val.sprite);
-			sprite.x = val.x+patchSquare.x;
-			sprite.y = val.y+patchSquare.y;
+			sprite.x = val.x+patchSquare.data.x;
+			sprite.y = val.y+patchSquare.data.y;
 
 			var spriteSize = {
 				width:sprite.width,
@@ -134,8 +136,77 @@ module.exports = function(){
 	}
 
 	createNinePatch();
+	patchSquare.parent.bringToTop(patchSquare);
 
 	patchSquare.onChange.add(function(){
 		createNinePatch();
+		patchSquare.parent.bringToTop(patchSquare);
 	})
+
+	patchSquare.refresh();
+
+	var createResizableText = function(){
+		var text = game.add.text(
+			0,
+			0,
+			'test',
+			{
+				font:"40px Helvetica, Arial, sans-serif",
+				align:'center',
+				fill:'#FFFFFF',
+			}
+		);
+
+		var bounds = {
+			width:390,
+			height:150,
+			x:0,
+			y:0,
+		};
+
+		text.tabs = 3;
+		text.wordWrap = false;
+		// text.lineSpacing = 5;
+		text.style.boundsAlignH = 'center';
+		text.style.boundsAlignV = 'middle';
+
+		var initalFontSize = text.fontSize;
+
+		text.resize = function(bounds){
+			text.setTextBounds(bounds.x,bounds.y,bounds.width,bounds.height);
+			text.wordWrapWidth = bounds.width;
+
+			text.fontSize = initalFontSize;
+
+			while((text.width > bounds.width || text.height > bounds.height) &&
+				text.fontSize > 0) {
+				text.fontSize--;
+			}
+		}
+
+		text.resize(bounds);
+
+		return text;
+	}
+
+	var text = createResizableText();
+
+
+	// example of fitting text
+	var groupText = game.add.group();
+	groupText.x = 190;
+	groupText.y = 50;
+
+	var textSquare = lulu.square();
+	textSquare.x = 50;
+	textSquare.y = 50;
+
+	groupText.add(textSquare)
+	groupText.add(text)
+
+	textSquare.onChange.add(function(data){
+		text.resize(data)
+	})
+
+	textSquare.refresh();
 }
