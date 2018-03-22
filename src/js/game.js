@@ -43,6 +43,9 @@ module.exports = function(){
 			case 'sprite':
 				require('./examples/sprite')();
 			break;
+			case 'group':
+				require('./examples/group')();
+			break;
 			case 'rectangle':
 				require('./examples/rectangle')();
 			break;

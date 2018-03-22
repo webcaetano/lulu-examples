@@ -19,6 +19,9 @@ module.exports = function(){
 			name:'sprite',
 		},
 		{
+			name:'group',
+		},
+		{
 			name:'rectangle',
 		},
 		{
